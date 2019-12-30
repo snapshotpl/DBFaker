@@ -16,8 +16,12 @@ matrix:
   include:
     - php: 7.4
       env: PREFER_LOWEST="" DB=mysql COVERALLS=true
+      services:
+        - mysql
     - php: 7.4
       env: PREFER_LOWEST="--prefer-lowest" DB=mysql
+      services:
+        - mysql
 #    - php: 7.4
 #      env: PREFER_LOWEST="" DB=mariadb
 #      addons:
