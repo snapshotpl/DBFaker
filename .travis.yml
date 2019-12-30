@@ -42,20 +42,20 @@ matrix:
         postgresql: "9.6"
       services:
         - postgresql
-  - php: 7.2
-    env: PREFER_LOWEST="" DB=mysql
-  - php: 7.2
-    env: PREFER_LOWEST="--prefer-lowest" DB=mysql
-  - php: 7.2
-    env: PREFER_LOWEST="" DB=mariadb
-    addons:
-      mariadb: '10.0'
-  - php: 7.2
-    env: PREFER_LOWEST="" DB=postgres PHPUNITFILE="-c phpunit.postgres.xml"
-    addons:
-      postgresql: "9.6"
-    services:
-      - postgresql
+    - php: 7.2
+      env: PREFER_LOWEST="" DB=mysql
+    - php: 7.2
+      env: PREFER_LOWEST="--prefer-lowest" DB=mysql
+    - php: 7.2
+      env: PREFER_LOWEST="" DB=mariadb
+      addons:
+        mariadb: '10.0'
+    - php: 7.2
+      env: PREFER_LOWEST="" DB=postgres PHPUNITFILE="-c phpunit.postgres.xml"
+      addons:
+        postgresql: "9.6"
+      services:
+        - postgresql
 
 cache:
   directories:
