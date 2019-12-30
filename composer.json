@@ -10,7 +10,7 @@
     "fzaninotto/faker": "^1.8",
     "doctrine/dbal": "^2.7",
     "psr/log": "^1.0",
-    "php": ">=7.1",
+    "php": ">=7.2",
     "mouf/utils.log.psr.errorlog_logger": "^2.0",
     "ext-bcmath": "*"
   },
