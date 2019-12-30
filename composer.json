@@ -7,7 +7,7 @@
     "psr-4": { "DBFaker\\": "src/" }
   },
   "require": {
-    "fzaninotto/faker": "^1.8",
+    "fzaninotto/faker": "^1.9.1",
     "doctrine/dbal": "^2.7",
     "psr/log": "^1.0",
     "php": ">=7.2",
